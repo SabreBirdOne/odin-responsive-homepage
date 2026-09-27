@@ -137,3 +137,7 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+plan/portfolio mobile.png
+plan/portfolio tablet.png
+plan/portfolio.png
+plan/icons.txt
