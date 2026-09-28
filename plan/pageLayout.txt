@@ -1,0 +1,25 @@
+I'm doing mobile-first design. It's great when it's simple.
+
+Header
+    Full Name
+    Image 
+    Section about me
+        includes links icon panel
+
+Main (my work)
+
+    Project Card(s)
+        Project Screenshot
+        Project Info div
+            name, github button, external link button
+            project description
+    
+Footer
+    Section contact me
+        text (with address)
+
+        phone icon, phone number
+        email icon, email
+
+        links icon panel  
+    Image
