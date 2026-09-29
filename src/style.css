@@ -44,6 +44,34 @@ footer section .contactInfo {
     flex-direction: column;
 }
 
+@media (min-width: 450px) {
+    footer {
+        display: flex;
+        padding: 1.5rem;
+    }
+
+    footer section {
+        flex: 1;        
+        padding: 1.5rem;
+    }
+
+    footer section * {
+        max-width: 80%;
+    }
+
+    footer section h2 {
+        align-self: start;
+    }
+
+    footer section article {
+        font-size: 1rem;
+    }
+
+    footer img {
+        flex: 1;
+    }
+}
+
 /*
     Border highlighting
 */
