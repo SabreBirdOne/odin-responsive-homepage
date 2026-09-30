@@ -12,6 +12,17 @@ body {
     background-color: rgb(240, 240, 240);
 }
 
+.aboutMeSection {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMeSection article {
+    font-size: 1.1rem;
+}
+
 main {
     padding: 5rem 1rem;
     display: flex;
@@ -173,7 +184,8 @@ footer section * img {
     border: 1px solid red;
 }
 
-.blackBorder, .projectInfo * nav {
+.blackBorder, 
+nav {
     border: 1px solid black;
 }
 
