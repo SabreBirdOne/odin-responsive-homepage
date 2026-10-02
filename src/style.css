@@ -13,7 +13,7 @@ body {
     background-color: rgb(240, 240, 240);
 }
 
-header {
+.aboutMeContainer {
     height: 130vh;
 
     display: flex;
@@ -36,6 +36,8 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
 
+    background-color: lightpink;
+
     margin-top: 2rem;
     position: relative;
 }
@@ -55,8 +57,12 @@ header {
     align-items: center;
 }
 
+h2 {
+    font-size: 2.3rem;
+}
+
 .aboutMeSection article {
-    font-size: 1.1rem;
+    font-size: 1.7rem;
 }
 
 main {
