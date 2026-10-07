@@ -1,0 +1,23 @@
+Icons to collect:
+
+Github
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+
+LinkedIn
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" />
+
+Stack Overflow
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/stackoverflow/stackoverflow-plain.svg" />
+
+Phone
+https://pictogrammers.com/library/mdi/
+
+Mail
+https://pictogrammers.com/library/mdi/
+
+External Link
+https://pictogrammers.com/library/mdi/
+
+Images:
+
+https://www.pexels.com/search/rubber%20duck/
