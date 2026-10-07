@@ -7,6 +7,7 @@
 body, body * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
 }
 
 .aboutMeContainer {
-    height: 130vh;
 
     display: flex;
     flex-direction: column;
@@ -23,20 +23,7 @@ body {
     position: relative;
 }
 
-.blueSquare {
-    background-color: var(--lightblue-bg-color);
-    width: 100vw;
-    height: 70vh;
-
-    position: absolute;
-    
-    transform-origin: bottom left;
-    transform: translateY(-10%);
-}
-
 .aboutMeImageDiv {
-    width: 80vw;
-    height: 60vh;
 
     background-image: url("../img/open-in-new.png");
     background-position: bottom center;
@@ -45,8 +32,6 @@ body {
 
     background-color: lightpink;
 
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
     position: relative;
 }
 
@@ -56,11 +41,9 @@ body {
 
     position: absolute;
     bottom: 0;
-    padding: 0.5rem;
 }
 
 .aboutMeSection {
-    padding: 1rem;
     
     display: flex;
     flex-direction: column;
@@ -79,7 +62,7 @@ h2 {
 }
 
 main {
-    padding: 5rem 1rem;
+
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -110,7 +93,7 @@ main .projectCards {
 }
 
 .projectInfo {
-    padding: 1.5rem;
+
 }
 
 .projectInfo header {
@@ -119,7 +102,6 @@ main .projectCards {
 }
 
 .projectInfo header h3{
-    margin-left: 1rem;
     font-size: 1.1rem;
 }
 
@@ -130,7 +112,7 @@ footer {
 footer section {
     color: var(--white-text-color);
     
-    padding: 1rem;
+
 
     display: flex;
     flex-direction: column;
@@ -139,7 +121,6 @@ footer section {
 
 footer section h2 {
     align-self: center;
-    margin: 0;
 }
 
 footer section article {
@@ -147,17 +128,28 @@ footer section article {
 }
 
 footer section p {
-    margin: 0;
+
 }
 
 footer section * img {
     display: none;
 }
 
+.blueSquare {
+    background-color: var(--lightblue-bg-color);
+
+    position: absolute;
+    transform-origin: bottom center;
+    transform: 
+        rotateZ(340deg)
+        scaleX(200%)
+        translateY(-35%)
+    ;
+}
 @media (min-width: 600px) {
+
     main {
-        padding: 4.5rem;
-        margin-bottom: 4rem;
+
 
         display: flex;
         flex-direction: column;
@@ -175,22 +167,21 @@ footer section * img {
     }
 
     .projectInfo header h3{
-        margin-left: 0;
         font-size: 1.1rem;
     }
 
     footer {
         display: flex;
-        padding: 1.5rem;
+
     }
 
     footer section {
         flex: 1;        
-        padding: 1.5rem;
+
     }
 
     footer section * {
-        max-width: 80%;
+
     }
 
     footer section h2 {
@@ -202,7 +193,7 @@ footer section * img {
     }
 
     footer section div {
-        max-width: 100%;
+
         display: flex;
         gap: 10px;
 
@@ -211,10 +202,8 @@ footer section * img {
 
     footer section * img {
         display: inline;
-        max-width: 1.5rem;
         filter: invert(100%);
         
-        padding: 0;
     }
 
     footer img {
