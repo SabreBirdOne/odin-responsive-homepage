@@ -21,3 +21,5 @@ https://pictogrammers.com/library/mdi/
 Images:
 
 https://www.pexels.com/search/rubber%20duck/
+
+Cropped Images are made with Krita
