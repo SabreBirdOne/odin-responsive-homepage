@@ -30,6 +30,7 @@ nav {
     gap: 2rem;
 
     position: relative;
+    contain: paint;
 }
 
 .blueSquare {
