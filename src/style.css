@@ -211,31 +211,39 @@ footer section nav {
 
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 2rem;
+
+        padding: 2rem;
     }
 
     footer section {
-        color: var(--white-text-color);
         padding: 0;
+        padding-top: 5vh;
 
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.2rem;
+        flex: 1;
     }
 
     footer section h2,
     footer section nav {
-        align-self: center;
+        align-self: flex-start;
     }
 
     footer section article {
         font-size: 1.3rem;
     }
 
+    .phoneContactInfo, 
+    .emailContactInfo {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
     .phoneContactInfo img,
     .emailContactInfo img {
-        display: none;
+        display: inline;
+        width: 2rem;
+        filter: invert(100%);
     }
 
     footer section nav {
@@ -246,7 +254,7 @@ footer section nav {
 
     .contactMeImageDiv {
         width: 100%;
-        height: 40vh;
+        height: 60vh;
         background-image: url("../img/contactMe-cropped.jpg");
         background-position: center;
         background-size: cover;
