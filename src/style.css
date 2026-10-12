@@ -201,6 +201,8 @@ footer section nav {
 @media (min-width: 600px) {
 
     .aboutMeContainer {
+        display: block;
+
         position: relative;
         contain: paint;
 
@@ -229,7 +231,8 @@ footer section nav {
         min-width: 40vw;
         min-height: 50vh;
 
-        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-top: 2.5rem;
     }
 
     .aboutMeSection {
@@ -239,7 +242,20 @@ footer section nav {
         position: absolute;
         z-index: 2;
 
-        padding: 4rem;
+        margin: 0 4rem;
+        margin-top: 6rem;
+        padding: 2rem;
+
+        min-height: 65vh;
+    }
+
+    .aboutMeSection nav {
+        height: 2rem;
+        min-width: 20%;
+        gap: 0.5rem; 
+
+        align-self: flex-end;
+        justify-content: space-between;
     }
 
     main {
