@@ -200,8 +200,18 @@ footer section nav {
 
 @media (min-width: 600px) {
 
+    .aboutMeContainer {
+        position: relative;
+        contain: paint;
+
+        min-height: 80vh;
+        min-width: 100vw;
+    }
+
     .blueSquare {
         position: absolute;
+        z-index: 1;
+
         transform-origin: bottom center;
         transform: 
             rotateZ(340deg)
@@ -209,6 +219,28 @@ footer section nav {
             translateY(-30%)
         ;
     } 
+
+    .aboutMeImageDiv {
+        background-image: url("../img/aboutMe-cropped.jpg");
+
+        position: absolute;
+        z-index: 3;
+
+        min-width: 40vw;
+        min-height: 50vh;
+
+        margin-top: 1rem;
+    }
+
+    .aboutMeSection {
+        
+        background-color: var(--white-text-color);
+
+        position: absolute;
+        z-index: 2;
+
+        padding: 4rem;
+    }
 
     main {
         align-items: flex-start;
