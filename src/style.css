@@ -111,7 +111,7 @@ main .projectCards {
 }
 
 .project {
-    box-shadow: 2px 2px 1px 2px darkgrey;
+    box-shadow: 5px 5px 3px 3px darkgrey;
     background-color: white;
 
     height: 60vh;
@@ -201,9 +201,26 @@ footer section nav {
 @media (min-width: 600px) {
 
     main {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+        align-items: flex-start;
+        padding: 0 4rem;
+        margin-bottom: 8rem;
+    }
+
+    main .projectCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.5rem 2rem;
+    }
+
+    .project {
+        height: 50vh;
+
+        display: grid;
+        grid-template-rows: 1.5fr 1fr;
+    }
+
+    .projectInfo header {
+        margin-left: 0;
     }
 
     footer {
