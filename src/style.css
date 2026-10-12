@@ -200,6 +200,16 @@ footer section nav {
 
 @media (min-width: 600px) {
 
+    .blueSquare {
+        position: absolute;
+        transform-origin: bottom center;
+        transform: 
+            rotateZ(340deg)
+            scaleX(300%)
+            translateY(-30%)
+        ;
+    } 
+
     main {
         align-items: flex-start;
         padding: 0 4rem;
