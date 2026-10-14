@@ -81,6 +81,10 @@ h1 {
     padding: 1rem;
 }
 
+.aboutMeImageDiv2, .aboutMeFullNameTablet {
+    display: none;
+}
+
 .aboutMeSection article {
     font-size: 1.5rem;
 }
@@ -206,8 +210,21 @@ footer section nav {
         position: relative;
         contain: paint;
 
-        min-height: 80vh;
+        min-height: 90vh;
         min-width: 100vw;
+    }
+
+    .aboutMeFullNameTablet {
+        display: block;
+        position: absolute;
+        z-index: 3;
+
+        font-size: 2.5rem;
+        max-width: 60vw;
+        text-align: center;
+
+        top: 2rem;
+        right: 10vw;
     }
 
     .blueSquare {
@@ -223,39 +240,53 @@ footer section nav {
     } 
 
     .aboutMeImageDiv {
-        background-image: url("../img/aboutMe-cropped.jpg");
-
-        position: absolute;
-        z-index: 3;
-
-        min-width: 40vw;
-        min-height: 50vh;
-
-        margin-left: 2rem;
-        margin-top: 2.5rem;
+        display: none;
     }
 
     .aboutMeSection {
-        
+        display: block;
+
         background-color: var(--white-text-color);
 
         position: absolute;
         z-index: 2;
 
         margin: 0 4rem;
-        margin-top: 6rem;
+        margin-top: 10rem;
         padding: 2rem;
+    }
 
-        min-height: 65vh;
+    .aboutMeImageDiv2 {
+        display: block;
+
+        background-image: url("../img/aboutMe-cropped.jpg");
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        min-width: 50%;
+        min-height: 30vh;
+
+        margin-right: 1rem;
+
+        float: left;
+
+        transform-origin: bottom right;
+        transform: 
+            scaleY(160%)
+            scaleX(120%);
+        ;
     }
 
     .aboutMeSection nav {
         height: 2rem;
-        min-width: 20%;
         gap: 0.5rem; 
 
         align-self: flex-end;
+        
+        display: flex;
         justify-content: space-between;
+        
     }
 
     main {
