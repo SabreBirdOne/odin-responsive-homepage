@@ -405,6 +405,7 @@ footer section nav {
         contain: paint;
 
         padding: 3rem 5rem;
+        min-height: 0;
     }
 
     .aboutMeContainer * {
@@ -442,18 +443,42 @@ footer section nav {
         min-height: 70vh;
     }
 
-    .aboutMeSection {
-        position: static;
-
-        min-height: 60vh;
-        z-index: 2;
-    }
-
     h1 {
         text-align: center;
     }
 
-    
+    h2, .aboutMeSection h2 {
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    .aboutMeSection {
+        position: static;
+
+        min-height: 55vh;
+        z-index: 2;
+
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .aboutMeSection h2 {
+        margin-bottom: 2rem;
+        align-self: flex-start;
+    }
+
+    .aboutMeSection article {
+        font-size: 1.3rem;
+        flex:1;
+    }
+
+    .aboutMeSection nav {
+        min-width: 100%;
+        margin-top: 0;        
+    }
 
     main .projectCards {
         display: grid;
