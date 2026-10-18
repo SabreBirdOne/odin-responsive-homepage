@@ -396,6 +396,10 @@ footer section nav {
 
 @media (min-width: 1000px) {
 
+    body {
+        gap: 7rem;
+    }
+
     .aboutMeContainer {
         display: flex;
         flex-direction: row;
@@ -483,10 +487,16 @@ footer section nav {
         margin-top: 0;        
     }
 
+    main {
+        padding: 0 5rem;
+        align-self: stretch;
+    }
+
     main .projectCards {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 3rem;
+        width: 100%;
     }
 
     
