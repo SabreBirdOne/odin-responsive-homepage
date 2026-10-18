@@ -395,6 +395,66 @@ footer section nav {
 }
 
 @media (min-width: 1000px) {
+
+    .aboutMeContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+
+        position: relative;
+        contain: paint;
+
+        padding: 3rem 5rem;
+    }
+
+    .aboutMeContainer * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .aboutMeFullNameTablet, .aboutMeImageDiv2 {
+        display: none;
+    }
+
+    .blueSquare {
+        position: absolute;
+        z-index: 1;
+
+        transform-origin: bottom left;
+
+        transform: 
+            scaleX(150%)
+            scaleY(150%)
+            rotateZ(345deg)
+            translateY(2rem)
+            translateX(-5rem)
+        ;
+    }
+
+    .aboutMeImageDiv {
+        display: block;
+
+        background-position: center;
+        position: relative;
+        z-index: 3;
+
+        min-width: 40vw;
+        min-height: 70vh;
+    }
+
+    .aboutMeSection {
+        position: static;
+
+        min-height: 60vh;
+        z-index: 2;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    
+
     main .projectCards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
