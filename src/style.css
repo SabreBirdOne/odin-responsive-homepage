@@ -499,6 +499,17 @@ footer section nav {
         width: 100%;
     }
 
+    footer {
+        margin-top: 0;
+        padding: 3rem 5rem;
+    }
+
+    footer section nav {
+        min-width: 100%;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
     
 }
 
