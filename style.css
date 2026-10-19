@@ -1,0 +1,529 @@
+:root {
+    --white-text-color: rgb(250, 250, 250);
+    --lightblue-bg-color: rgb(0, 190, 255);
+    --debug-green: green;
+}
+
+body, body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    position: relative;
+    contain: paint;
+}
+
+.blueSquare {
+    background-color: var(--lightblue-bg-color);
+    box-shadow: 5px 5px 3px 3px darkgrey;
+
+    width: 100vw;
+    min-height: 60vh;
+
+    position: absolute;
+    transform-origin: bottom center;
+    transform: 
+        rotateZ(330deg)
+        scaleX(300%)
+        translateY(-20%)
+    ;
+}  
+
+.aboutMeImageDiv {
+    background-image: url("./img/aboutMe.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: 5px 5px 3px 3px darkgrey;
+
+    position: relative;
+
+    min-width: 80vw;
+    min-height: 60vh;
+
+    margin-top: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: var(--white-text-color);
+    text-shadow: 3px 3px 2px darkgrey;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.aboutMeSection {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    
+    z-index: 3;
+    
+    padding: 1rem;
+}
+
+.aboutMeImageDiv2, .aboutMeFullNameTablet {
+    display: none;
+}
+
+.aboutMeSection article {
+    font-size: 1.5rem;
+}
+
+.aboutMeSection nav {
+    height: 2.5rem;
+    min-width: 50%;
+    gap: 1rem; 
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding: 0 1rem;
+}
+
+main .projectCards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project {
+    box-shadow: 5px 5px 3px 3px darkgrey;
+    background-color: white;
+
+    height: 60vh;
+
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+}
+
+.projectImage {
+    background-image: url(./img/email-outline.png);
+    background-position: center;
+    background-size: cover;
+    background-color: pink;
+}
+
+.projectInfo {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.projectInfo header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.projectInfo header nav {
+    height: 1.5rem;
+    gap: 1rem;
+}
+
+footer {
+    background-color: var(--lightblue-bg-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+footer section {
+    color: var(--white-text-color);
+    padding: 0 1rem;
+    padding-top: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+footer section h2,
+footer section nav {
+    align-self: center;
+}
+
+footer section article {
+    font-size: 1.3rem;
+}
+
+.phoneContactInfo img,
+.emailContactInfo img {
+    display: none;
+}
+
+footer section nav {
+    height: 2.5rem;
+    min-width: 55%;
+    gap: 1rem; 
+}
+
+.contactMeImageDiv {
+    width: 100vw;
+    height: 60vh;
+    background-image: url("./img/contactMe-cropped.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 600px) {
+
+    body {
+        gap: 1rem;
+    }
+
+    .aboutMeContainer {
+        display: block;
+
+        position: relative;
+        contain: paint;
+
+        min-height: 80vh;
+        min-width: 100vw;
+    }
+
+    .aboutMeFullNameTablet {
+        display: block;
+        position: absolute;
+        z-index: 3;
+
+        font-size: 2.5rem;
+        max-width: 60vw;
+        text-align: center;
+        text-shadow: 3px 3px 2px darkgrey;
+
+        top: 2rem;
+        right: 10vw;
+    }
+
+    .blueSquare {
+        position: absolute;
+        z-index: 1;
+
+        transform-origin: bottom center;
+        transform: 
+            rotateZ(340deg)
+            scaleX(300%)
+            translateY(-30%)
+        ;
+    } 
+
+    .aboutMeImageDiv {
+        display: none;
+    }
+
+    .aboutMeSection {
+        display: block;
+
+        background-color: var(--white-text-color);
+        box-shadow: 5px 5px 3px 3px darkgrey;
+
+        position: absolute;
+        z-index: 2;
+
+        margin: 0 4rem;
+        margin-top: 10rem;
+        padding: 2rem;
+    }
+
+    .aboutMeImageDiv2 {
+        display: block;
+
+        background-image: url("./img/aboutMe-cropped.jpg");
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 5px 5px 3px 3px darkgrey;
+
+        min-width: 50%;
+        min-height: 30vh;
+
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+
+        float: left;
+
+        transform-origin: bottom right;
+        transform: 
+            scaleY(160%)
+            scaleX(120%);
+        ;
+    }
+
+    .aboutMeSection h2 {
+        font-size: 2rem;
+        text-align: center;
+
+        margin-top: 2rem;
+    }
+
+    .aboutMeSection article {
+        font-size: 1.2rem;
+    }
+
+    .aboutMeSection nav {
+        height: 2rem;
+        margin-top: 1rem;
+        
+        display: flex;
+        justify-content: end;
+        gap: 1rem; 
+        
+    }
+
+    main {
+        align-items: flex-start;
+        padding: 0 4rem;
+        margin-bottom: 8rem;
+    }
+
+    main .projectCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.5rem 2rem;
+    }
+
+    .project {
+        height: 50vh;
+
+        display: grid;
+        grid-template-rows: 1.5fr 1fr;
+    }
+
+    .projectInfo header {
+        margin-left: 0;
+    }
+
+    footer {
+        width: 100vw;
+
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        padding: 2rem;
+        margin-top: 4rem;
+    }
+
+    footer section {
+        padding: 0;
+        padding-top: 5vh;
+
+        flex: 1;
+    }
+
+    footer section h2,
+    footer section nav {
+        align-self: flex-start;
+    }
+
+    footer section article {
+        font-size: 1.3rem;
+    }
+
+    .phoneContactInfo, 
+    .emailContactInfo {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .phoneContactInfo img,
+    .emailContactInfo img {
+        display: inline;
+        width: 2rem;
+        filter: invert(100%);
+    }
+
+    footer section nav {
+        height: 2.5rem;
+        min-width: 55%;
+        gap: 1rem; 
+    }
+
+    .contactMeImageDiv {
+        width: 100%;
+        height: 60vh;
+        background-image: url("./img/contactMe-cropped.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        flex: 1;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        gap: 7rem;
+    }
+
+    .aboutMeContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+
+        position: relative;
+        contain: paint;
+
+        padding: 3rem 5rem;
+        min-height: 0;
+    }
+
+    .aboutMeContainer * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .aboutMeFullNameTablet, .aboutMeImageDiv2 {
+        display: none;
+    }
+
+    .blueSquare {
+        position: absolute;
+        z-index: 1;
+
+        transform-origin: bottom left;
+
+        transform: 
+            scaleX(150%)
+            scaleY(150%)
+            rotateZ(345deg)
+            translateY(2rem)
+            translateX(-5rem)
+        ;
+    }
+
+    .aboutMeImageDiv {
+        display: block;
+
+        background-position: center;
+        position: relative;
+        z-index: 3;
+
+        min-width: 40vw;
+        min-height: 70vh;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 0.5rem;
+        left: 0;
+        right: 0;
+    }
+
+    h2, .aboutMeSection h2 {
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    .aboutMeSection {
+        position: static;
+
+        min-height: 55vh;
+        z-index: 2;
+
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .aboutMeSection h2 {
+        margin-bottom: 2rem;
+        align-self: flex-start;
+    }
+
+    .aboutMeSection article {
+        font-size: 1.3rem;
+        flex:1;
+    }
+
+    .aboutMeSection nav {
+        min-width: 100%;
+        margin-top: 0;        
+    }
+
+    main {
+        padding: 0 5rem;
+        align-self: stretch;
+    }
+
+    main .projectCards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 3rem;
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 0;
+        padding: 3rem 5rem;
+    }
+
+    footer section {
+        flex: 1;
+    }
+
+    footer section nav {
+        min-width: 100%;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    footer .contactMeImageDiv {
+        background-image: url(./img/contactMe.jpg);
+        background-position: center;
+        min-height: 80vh;
+        
+        flex: 2;
+    }
+
+    
+}
+
+
+
