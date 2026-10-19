@@ -1,0 +1,105 @@
+    HTML layout across breakpoints
+
+First off, the plans for pageLayout is pretty outdated by now. 
+That's because during the implementation of the different 
+layouts between the breakpoints, 
+
+I find myself needing to restructure the HTML DOM tree of elements
+a little bit. The aboutMeImageDiv element and the full name h1 
+element element ended up being duplicated and moved to different
+nesting in the DOM tree, so the position property can work better.
+
+I should have thought more about how the elements 
+need to be nested to make sure the overlap effect can be achieved.
+
+    Position property
+
+This is my first foray into seriously using the "position" 
+property. The Odin Project already covered this content long ago,
+but I never needed to use it for front end projects since there
+wasn't any overlapping required, until this project. 
+
+This property was a major obstacle, but I'm warmed up to the 
+concept behind it now. 
+
+    Media Query and mobile first design
+
+I went with a mobile first approach to developing the website, 
+and it took me a few tries to get the media queries right. 
+I like the mobile first approach and see the rationle behind it.
+I still have to deal with "carryover" values when working on 
+new breakpoints.
+
+    No real plan in CSS?
+
+There's no real plan or specifications to check off some list 
+like you may have with back-end JS code, or Test Driven 
+Development style. This is CSS... the HTML IS the test! 
+
+The lack of planning also meant I didn't even think to use 
+git branching. 
+
+    Bad Selector habits
+
+I tried my best to use class selectors in CSS, but I end up 
+keep using the "parent child" selectors in CSS whenever convenient.
+Though I do get the point of using class selectors when I want 
+styles to still be applied onto specific elements even when they 
+are moved to other nesting locations in the DOM tree.
+
+    Commit history
+
+The commit history sure looks awful. Just one straight string of 
+commits (failures?). 
+
+I tell myself "let's just keep it this way for history's sake" 
+but who am I kidding. Like I'll actually read through all this. 
+
+    Project progression
+
+Initially, I got the general layout of all breakpoints to look
+decent. However, I keep messing up the margin and paddings. 
+I didn't use box-sizing: border-box, which is what I thought 
+I had. This prompted me to remove the margin and paddings in 
+despair and redo them. 
+
+Then finding out the header element needs to have the 
+position property applied to achieve the overlapping effect.
+I know there's a better way to build the DOM tree to style it,
+but I just settled with duplicating elements in different locations,
+then toggle the "display: none" to hide the ones that shouldn't 
+render between breakpoints.
+
+The rest is just busy work.
+
+    Conclusion
+
+This is a rather rough refresher on pretty much all things CSS 
+for me. This project was tough because I'm so rusty on CSS. 
+Flexbox, Grid, position property, margin-border-padding, 
+etc. I keep having to review all the concepts I needed to know. 
+At least I know what CSS to use for which part of the website.
+
+The project also tested my DOM tree skills. Different trees 
+can render the similar looking webpages while being quite 
+different in how elements are nested. 
+
+You wouldn't know, at first glance, what tree structure 
+is best across different screen sizes, while staring at 
+those design briefs.
+
+I wonder how frameworks can help maintain the link between
+back end code and front end layout, considering that the 
+front end tree structure can just change. I'm sick of having 
+to use class selectors sometimes (or supposedly, every time).
+
+ODIN is saying this is the final HTML/CSS project? 
+I know that's not really the case. I swear I'll be reading 
+HTML/CSS code again even when using front-end frameworks.
+Yeah, React. We'll get there when we get there. 
+
+I don't think I gave myself enough time to think about the 
+bigger picture of the DOM Tree. 
+
+
+
